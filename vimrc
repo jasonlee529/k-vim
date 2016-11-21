@@ -687,4 +687,15 @@ highlight SpellLocal term=underline cterm=underline
 
 
 
-
+".vimrc
+map <F8> :call JsBeautify()<cr>
+" or
+autocmd FileType javascript noremap <buffer>  <F8> :call JsBeautify()<cr>
+" for json
+autocmd FileType json noremap <buffer> <F8> :call JsonBeautify()<cr>
+" for jsx
+autocmd FileType jsx noremap <buffer> <F8> :call JsxBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <F8> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <F8> :call CSSBeautify()<cr>

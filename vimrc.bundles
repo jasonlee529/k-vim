@@ -215,6 +215,8 @@ if count(g:bundle_groups, 'javascript')
     " 安装完成后还需要在 bundle/tern_for_vim 下执行 npm install 安装依赖
     " see https://github.com/marijnh/tern_for_vim
     " Plug 'marijnh/tern_for_vim'
+    Plug 'kris2k/vim-pathogen'
+    Plug 'maksimr/vim-jsbeautify'
 endif
 
 
